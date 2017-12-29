@@ -16,7 +16,7 @@ The parts here are aimed at giving you a flavour of the steps that needs to be t
 Before we start there are some notations in the following text that may need a brief introduction.
 UNIX commands such as *pwd* will be in italics in the text while commands that you need to type will look like this:
 <pre>
-\#This is a comment that is not executed
+ #This is a comment that is not executed
 pwd
 </pre>
 **Note:** In order to give you the chance to solve the exercise on your own the answers/tips are hidden by default. Click on the small arrow to reveal the answer. Try for yourself first and then look at the provided answers to maximise your learning experience!
