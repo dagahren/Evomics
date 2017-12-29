@@ -1,7 +1,6 @@
-# Project Management 
+# Inital handling of a sequencing project 
 
 Questions about the material? Please contact:  
-
 **Dag Ahrén**  
 **National Bioinformatics Sweden (NBIS), Lund University, Sweden**  
 **Email: dag.ahren@nbis.se**  
@@ -12,13 +11,21 @@ Twitter: @dagahren
 This document is the embryo of a Bioinformatics Lab for the Workshop on Genomics, Cesky Krumlov, Czechia (yes, the Czech Republic is now referred to as Czechia). 
 For more information on the course in its entirety, please have a look at [The Workshop on Genomics 2018](http://evomics.org/workshops/workshop-on-genomics/2018-workshop-on-genomics-cesky-krumlov/)
 
-The parts here are a mix of my personal views on the latest developments and future prospects where I believe that the field is heading. The idea is to give you an idea of how you can handle and process the sequence data that you recieve from the sequencer. Although some parts of the lab and certain tools may be specific to a particular sequencing technology or application, the overall philosophy on handling your sequencing data is the same.
+The parts here are aimed at giving you a flavour of the steps that needs to be taken in most sequencing projects and provides examples from several sequencing technologies. The idea is to give you an feel for how you can handle and process the sequence data that you recieve from the sequencer. Although some parts of the lab and certain tools may be specific to a particular sequencing technology or application, the overall philosophy on handling your sequencing data is the same and has already proven to withstand the test of time.
 
 OK, lets get to work! The lab will guide you through a number of important steps and considerations when working with sequence data.
 
 ### Datasets
-Provide links and metadata for all datasets used in the exercises below.
-Suggestions:
+Lets say that you just got your freshly baked sequences back from the sequencing centre. Everyone in the project is excited about the new insights that the data will bring.  
+**So what do you do now?**  
+
+This question is the essence of what this lab is all about!
+
+For practical reasons we will use test datasets here, but most steps would apply to your favourite sequencing project.
+
+<!--Provide links and metadata for all datasets used in the exercises below.-->
+
+
 
 ### Software used in the exercises
 Seqtk [Seqtk on Github](https://github.com/lh3/seqtk)  
@@ -26,11 +33,14 @@ FastQC [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/download.html
 
 
 ##	Reproducibility 101
-- Organising files in the project (UNIX hygiene)
+- Organising files in the project (UNIX hygiene): structure/
 - A few words on reproducibiliy (be kind to yourself and others)
 - Git?
 - Datasubmission, Storage vs backup. Save your raw data
-- Exercise 1
+
+Add Exercise 1 here (Making a useful dir structure, write-protecting the raw data, symbolic links. Recommended structure: Data,Docs,Analysis,Scripts,Progs
+
+ 
 - References
 - md5 checksums?
 ## Quality control
@@ -74,3 +84,8 @@ While the quality of the sequences we are getting is constantly improving there 
 - Summary
 - What is important for you and your fellow researchers?
 - Rings in the water, inspire others!
+
+<details>
+<summary> Click to see how</summary>
+This is a hidden answer
+</details>  
