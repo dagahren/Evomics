@@ -69,7 +69,7 @@ While the quality of the sequences we are getting is constantly improving there 
 - Ribosomal contamination
 - Read through issues (adapter and crap sequence
 - Drop in base calling accuracy with increasing number of cycles (Illumina, e.g. MiSeq)
-- Excercise 2 (MultiQC based)
+- Excercise 2 (MultiQC based, pick examples from the previous lab!)
 
 ## Trimming and Filtering
 - When to trim and when not to
