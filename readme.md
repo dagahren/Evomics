@@ -121,7 +121,10 @@ fastqc
 
 It may take a short while to get the graphics presented on your screen so be a bit patient here.
 
-* Next, choose the fastq file you want to investigate. In this case select the gzipped fastq file called bartonella_illumina.fastq in the quality\_control directory.
+* Next, choose the fastq file you want to investigate. In this case select the gzipped fastq file called **bartonella_illumina.fastq** in the quality\_control directory:
+
+Open->workshop_materials/quality_control/bartonella_illumina.fastq
+
 
 Once you have selected the file, fastqc will start running (it will take a few minutes so a short break is a good idea). 
 
@@ -190,12 +193,13 @@ Why is read 2 poorer quality than read 1?
 * Now filter the data. For this we will use fastq-mcf. You’re going to need to work out the command to run. Take a look at the manual to tell you the usage statement and the parameter choices:
 	<pre>fastq-mcf -h </pre>
 	
-	<!-- fastq-mcf command here -->
+	<!-- fastq-mcf comma -->
 	
 Run fastq-mcf to filter based on a q score of 35 and a minimum length of 80 bp.
 The adaptors can be found in the file adaptors.fasta. Make sure you specify an output file for both the forward and reverse reads with a different name than the raw data. 
 Run FastQC on the filtered reads - can you see any changes? 
 Think about cases where such strict quality control might not be necessary.
+
 
 ##### Exercise 6
 
@@ -227,10 +231,6 @@ However, not all PacBio sequences look like this. For example, lets run fastqc o
 - Exercise 3 (MultiQC based, compare with untrimmed data)
 -->
 
-<details>
-<summary> Click to see how</summary>
-This is a hidden answer
-</details>  
 
 ##	Reproducibility 101
 We have now run a few analyses with several datasets and programs. Have a look at the files you produced. Would you remember what all the different files are and recall how you produced them? Probably not, so to be kind to your future self finding a way to organise your work is highly recommended. Below there are a few suggestions that could be useful, but feel free to find your own path (no pun intended).Lets do another exercise and this time we will run another exercise with some recommended file structure to follow. It will be a bit harder to keep track of the structure and in which directory you are but for a real project it would be highly beneficial.
