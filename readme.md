@@ -1,4 +1,4 @@
-# Inital handling of a sequencing project 
+# Sequence Data Quality Control 
 <!--
 Questions about the material? Please contact:  
 **Dag Ahrén**  
