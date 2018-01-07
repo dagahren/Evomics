@@ -49,14 +49,6 @@ For practical reasons we will use test datasets here, but most steps would apply
 All datasets are provided in the following directory:
 <pre>~/workshop\_materials/quality\_control/</pre>
 
-### Software used in the exercises
-[Seqtk on Github](https://github.com/lh3/seqtk)  
-[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)  
-Jellyfish  
-[MultiQC](http://multiqc.info/)
-
----
-
 <!--- 
 Make sure to make them remember tab-completion, pwd etc
 - All data should be gzipped and chmod 444
@@ -88,10 +80,13 @@ While the quality of the sequences we are getting is constantly improving there 
 **Note:** As you probably noticed in the above bullets, the study design and your research project is central to your interpretation of the QC results. It is important to emphasise that you need to treat your bioinformatics project with the same scientific approach as you would a wet lab experiment.
 
 --  
+Overview:
+
 * Exercise 1: Bartonella
 * Exercise 2: EMP
 * Exercise 3: RADsequencing data 
-* Exercise 4: miSeq Amplicon fastq-mcf
+* Exercise 4: Another RAD dataset
+* Exercise 5: miSeq Amplicon fastq-mcf
 * Exercise 5 smallRNA cutadapt
 * Exercise 6: PacBio data 
 * Exercise 7: RNA Seq dataset 
@@ -109,10 +104,7 @@ cd ~/qcLab
 
 There are a mulitude of software options for quality control of your sequence reads. Some are R packages such as ShortRead (bioconductor package that can actually do QC, filtering as well as trimming) while others are software that you run in your terminal. 
 
-##### Exercise 1
-
 FastQC is a java based quality control tool that can be used using commands in the terminal or by using a graphical interface. You can run fastqc as a graphical software or directly in the command line. 
-
 
 * Have a look at the first lines of sequence of the dataset. Can you identify what the different lines in fastq is? Hint: use head and tail. 
 
@@ -224,6 +216,7 @@ However, not all PacBio sequences look like this. For example, lets run fastqc o
 
 - FastQC Note: explain Q-scores 
 
+<!--
 ## Trimming and Filtering
 - When to trim and when not to
 - Adapter removal
@@ -232,7 +225,7 @@ However, not all PacBio sequences look like this. For example, lets run fastqc o
 - Removal of complete reads
 
 - Exercise 3 (MultiQC based, compare with untrimmed data)
-
+-->
 
 <details>
 <summary> Click to see how</summary>
