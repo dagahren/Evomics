@@ -1,11 +1,12 @@
 # Inital handling of a sequencing project 
-
+<!--
 Questions about the material? Please contact:  
 **Dag Ahrén**  
 **National Bioinformatics Sweden (NBIS), Lund University, Sweden**  
 **Email: dag.ahren@nbis.se**  
 Web page: www.nbis.se  
 Twitter: @dagahren  
+-->
 
 ## Intro
 <!--This document is the embryo of a Bioinformatics Lab for the Workshop on Genomics, Cesky Krumlov, Czechia (yes, the Czech Republic is now referred to as Czechia). 
@@ -185,6 +186,19 @@ Now lets look at a paired-end Illumina RAD dataset. The forward read is in the f
 * Still looking at Read 2, take a look at the “Per base N content” and “Overrepresented sequences”. Do you think this is good data?
 
 ##### Exercise 5
+* We will use cutadapt to filter and trim the data from an Illumina sequencing run of some microRNA. This data can be found in the file 
+SRR026762-sample.fastq.gz.
+
+* Analyse the quality of the data using FastQC and make a diagnosis of the data. What is the source of the overrepresented sequences? 
+* You are now going to use cutadapt to remove low quality bases and trim the adaptor sequence (these are on the 3’ end). The adaptor used to generate this library was SmallRNA3pAdapter_1.5 ATCTCGTATGCCGTCTTCTGCTTG. This time we have to tell cutadapt the adaptor sequence in the command and not in a file. Again, you’ll need to work out the command to run. To look at the cutadapt manual use:
+
+<pre>cutadapt --help </pre>
+
+You won’t need to unzip the file. Make sure that you specify an output file.
+
+* Analyse the filtered reads with FastQC and make a new diagnosis of the data. What do you observe? Are you satisfied with the outcome?
+
+##### Exercise 6
 Let’s look at some Illumina MiSeq paired end sequencing data from an amplicon study - 1_TAAGGCGA-TAGATCGC_L001_R1_001.fastq and 1_TAAGGCGA-TAGATCGC_L001_R2_001.fastq
 * Use FastQC to assess the quality (you can use either the graphical user interface or the command line). 
 
@@ -201,7 +215,7 @@ Run FastQC on the filtered reads - can you see any changes?
 Think about cases where such strict quality control might not be necessary.
 
 
-##### Exercise 6
+##### Exercise 7
 
 Let look at what PacBio sequences look like. 
 These long reads have a higher error rate than Illumina data and a different quality encoding.
@@ -281,16 +295,5 @@ multiqc ../fastqc/
  How does it compare to the FastQC report? Which would you prefer if you had hundreds of RAD samples?
 
 ## Few last words on data handling
-- Summary
-- What is important for you and your fellow researchers?
-- Inspire others!
+
  
-
-<!--- Dag will put a limited number of exercises in this section --->
-
-- Organising files in the project (UNIX hygiene): structure/
-- A few words on reproducibiliy (be kind to yourself and others)
-- Git?
-- Datasubmission, Storage vs backup. Save your raw data
-
-Add Exercise 1 here (Making a useful dir structure, write-protecting the raw data, symbolic links. Recommended structure: Data,Docs,Analysis,Scripts,Progs
