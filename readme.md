@@ -1,12 +1,4 @@
 # Sequence Data Quality Control 
-<!--
-Questions about the material? Please contact:  
-**Dag Ahrén**  
-**National Bioinformatics Sweden (NBIS), Lund University, Sweden**  
-**Email: dag.ahren@nbis.se**  
-Web page: www.nbis.se  
-Twitter: @dagahren  
--->
 
 ## Intro
 <!--This document is the embryo of a Bioinformatics Lab for the Workshop on Genomics, Cesky Krumlov, Czechia (yes, the Czech Republic is now referred to as Czechia). 
@@ -294,7 +286,16 @@ multiqc ../fastqc/
 * Investigate the MultiQC report   
  How does it compare to the FastQC report? Which would you prefer if you had hundreds of RAD samples?
 
-## Few last words on data handling
+###You have now completed this lab successfully!  
+###Well done and good luck with your future projects!
 
+--
 
- 
+ <!--
+Questions about the material? Please contact:  
+**Dag Ahrén**  
+**National Bioinformatics Sweden (NBIS), Lund University, Sweden**  
+**Email: dag.ahren@nbis.se**  
+Web page: www.nbis.se  
+Twitter: @dagahren  
+-->
