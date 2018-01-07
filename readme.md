@@ -93,7 +93,8 @@ Overview:
 * Exercise 7: RNA Seq dataset 
 
 #### Exercise 1
-First lets make a directory to work in:
+**First lets make a directory called qcLab to work in:**
+Hint: use mkdir to do this (and only use the hidden answer if you do not manage on your own!
 
 <details>
 <summary> Make a directory called qcLab and change into the new directory</summary>
@@ -124,7 +125,7 @@ It may take a short while to get the graphics presented on your screen so be a b
 
 * Next, choose the fastq file you want to investigate. In this case select the gzipped fastq file called **bartonella_illumina.fastq** in the quality\_control directory:
 
-Open->workshop_materials/quality_control/bartonella_illumina.fastq
+Open->workshop\_materials/quality\_control/bartonella_illumina.fastq
 
 
 Once you have selected the file, fastqc will start running (it will take a few minutes so a short break is a good idea). 
@@ -231,10 +232,9 @@ However, not all PacBio sequences look like this. For example, lets run fastqc o
 * Compare the results from the previous PacBio dataset. Why do you see differences in the per base sequence quality and per sequence quality score?
 
 --  
-
+<!--
 - FastQC Note: explain Q-scores 
 
-<!--
 ## Trimming and Filtering
 - When to trim and when not to
 - Adapter removal
@@ -248,6 +248,8 @@ However, not all PacBio sequences look like this. For example, lets run fastqc o
 
 ##	Reproducibility 101
 We have now run a few analyses with several datasets and programs. Have a look at the files you produced. Would you remember what all the different files are and recall how you produced them? Probably not, so to be kind to your future self finding a way to organise your work is highly recommended. Below there are a few suggestions that could be useful, but feel free to find your own path (no pun intended).Lets do another exercise and this time we will run another exercise with some recommended file structure to follow. It will be a bit harder to keep track of the structure and in which directory you are but for a real project it would be highly beneficial.
+
+Another suggestion is to keep track of commands used by keeping a separate terminal with a text editor of your choice open so that you can document your work as you proceed. There are many ways of doing this (R markdown, jupyter notebook etc), but here I would suggest that you start documenting in a simple text format and save it under the name README in the directory you are working in.
 
 Before starting an analysis it would be a good idea to make your data  read-only using: <pre> chmod 444 *fastq</pre>
 
@@ -266,8 +268,6 @@ With the massive amount of sequencing, file sizes and hard disk space is constan
 Here we will reuse the CAN RADSeq data.  
 
 * Make a symbolic link of the CAN datasets in the Data directory
-
-
 
 <details>
 <summary> Click to see how to make a symbolic link</summary>
@@ -295,5 +295,6 @@ multiqc ../fastqc/
  How does it compare to the FastQC report? Which would you prefer if you had hundreds of RAD samples?
 
 ## Few last words on data handling
+
 
  
