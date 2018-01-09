@@ -213,7 +213,7 @@ However, not all PacBio sequences look like this. For example, lets run fastqc o
 --  
 
 ##	Reproducibility 101
-We have now run a few analyses with several datasets and programs. Have a look at the files you produced. Would you remember what all the different files are and recall how you produced them? Probably not, so to be kind to your future self finding a way to organise your work is highly recommended. Below there are a few suggestions that could be useful, but feel free to find your own path (no pun intended).
+We have now run a few analyses with several datasets and programs. Have a look at the files you produced. Would you remember what all the different files are and recall how you produced them? Probably not, so to be kind to your future self (and colleagues!) finding a way to organise your work is highly recommended. Below there are a few suggestions that could be useful, but feel free to find your own path (no pun intended).
 
 Lets do another exercise and this time we will run it with a recommended file structure to follow. It will be a bit harder to keep track of the structure and in which directory you are but for a real project it would be highly beneficial.
 
