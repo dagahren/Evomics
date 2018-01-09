@@ -128,7 +128,7 @@ Open->workshop\_materials/quality\_control/bartonella_illumina.fastq
 
 Once you have selected the file, fastqc will start running (it will take a few minutes so a short break is a good idea). 
 
-* Save the results to the qcLab directory.
+* Save the report to the qcLab directory.
 
 * Take your time to inspect the results of the FastQC run. Start with the basic statistics table. How many sequences did you get? Compare with your own count above. What is the percent GC? What is the length of the reads?
 
@@ -137,20 +137,22 @@ Once you have selected the file, fastqc will start running (it will take a few m
 ##### Exercise 2
 Now we will look at Illumina sequencing data from the Earth Microbiome Project. This is an environmental sample sequenced for 16S amplicons. This data is in the file EMP_Misc_16v4EMP_NoIndex_L005_R1_001-sample.fastq.gz. 
 
-* Load the data into FASTQC (note that there is no need to unzip it first). Make sure you save the results in the qcLab directory once the results are loaded.
+* Load the data into FASTQC (note that there is no need to unzip it first). Make sure you save the report in the qcLab directory once the results are loaded.
 * What can explain the pattern observed in the “Per base sequence content”? 
 * What can explain the particular pattern observed at the first 8 bases?
 * Based on the warning messages, if this was your data how would you approach the trimming and filtering? Why?
 
 ##### Exercise 3
-Now we will look at two sets of RAD sequencing data. For this Exercise we will use the command line version of FastQC. 
+Now we will look at two sets of RAD sequencing data. For this exercise we will use the command line version of FastQC. 
 
 Firstly 12 RAD sequencing samples saved in the compressed folder CAN.tgz.
 Uncompress the file using tar:
 
 <details>
 <summary> Hint for running tar</summary>
-<pre>
+<pre>#Check that you are in the qcLab directory
+pwd
+cd ~/qcLab 
 tar -xzvf ~/workshop_materials/quality_control/CAN.tgz
 </pre>
 Note that using this command will put the extracted in the directory where you are currently standing in a directory called CAN
