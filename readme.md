@@ -44,7 +44,9 @@ For practical reasons we will use test datasets here, but most steps would apply
 <!--Provide links and metadata for all datasets used in the exercises below. Make sure link is correct!!-->
 
 All datasets are provided in the following directory:
-<pre>~/workshop_materials/quality_control/</pre>
+<pre> 
+~/workshop_materials/quality_control/
+</pre>
 
 <!--- 
 Make sure to make them remember tab-completion, pwd etc
