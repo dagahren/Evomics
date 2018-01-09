@@ -27,14 +27,7 @@ OK, lets get to work! The lab will guide you through a number of important steps
 
 ### Datasets
 Lets say that you just got your freshly baked sequences back from the sequencing centre. Everyone in the project is excited about the new insights that the data will bring. 
- 
-<!--Suggestions:
-Fungal ITS amplicon PacBio sequence SRR6319114
-(Fungal ITS1 Amplicon Illumina SRR6172564)
-Sequel data Phanerochaete chrysosporium: SRR5647539
 
-
--->
 **So what do you do now?**  
 
 This question is the essence of what this lab is all about!
@@ -48,20 +41,6 @@ All datasets are provided in the following directory:
 ~/workshop_materials/quality_control/
 </pre>
 
-<!--- 
-Make sure to make them remember tab-completion, pwd etc
-- All data should be gzipped and chmod 444
-
-* Vibrio cholerae H1 strain:H1 Genome sequencing and assembly
-* SRR497968 PacBio RS 
-
-
-* Note Describe ln -s 
-* 
- --->
-
-
-
 ## Quality control
 
 ### Why do we need quality control?
@@ -73,8 +52,6 @@ While the quality of the sequences we are getting is constantly improving there 
 - Third, does the data look like we would expect? This point is not trivial and we will look more carefully into this later in this exercise, but as an example you would not expect the results from your QC from a de novo genome project to look the same as an amplicon project.  
 - Forth, are there any biases that you do not expect in your project?  
 
-<!-- - Finally, can you find any evidence of contamination? Is this contamination expected and can be filtered out? Perhaps it is an unexpected biologically interesting finding? Use your scientific skills and knowledge about the system to determine this.  
--->
 
 **Note:** As you probably noticed in the above bullets, the study design and your research project is central to your interpretation of the QC results. It is important to emphasise that you need to treat your bioinformatics project with the same scientific approach as you would a wet lab experiment.
 
@@ -85,10 +62,10 @@ Overview:
 * Exercise 2: EMP
 * Exercise 3: RADsequencing data 
 * Exercise 4: Another RAD dataset
-* Exercise 5: miSeq Amplicon fastq-mcf
-* Exercise 5 smallRNA cutadapt
-* Exercise 6: PacBio data 
-* Exercise 7: RNA Seq dataset 
+* Exercise 5: smallRNA 
+* Exercise 6: MiSeq amplicon
+* Exercise 7: PacBio data 
+* Exercise 8: Reproducibility
 
 #### Exercise 1
 **First lets make a directory called qcLab to work in:**
@@ -165,9 +142,13 @@ Analyse each of the samples using FastQC with the command line. This shows how t
 Note that by default output of the fastqc will be placed inside the CAN directory.
 </details> 
 
-Of course we could run the samples one at a time, but why not use the flexibility of the terminal by using a wildcard symbol to analyse multiple files at once? Try it now and check the results. Did you get fastq outputs for all of them? 
+* Of course we could run the samples one at a time, but why not use the flexibility of the terminal by using a wildcard symbol to analyse multiple files at once? Try it now and check the results. 
 
-Using your web browser look at the graphical results in the html files. From the command line type for the first file:
+* Did you get fastq outputs for all of them? How many files did you get?
+
+* Using your web browser look at the graphical results in the html files.
+
+From the command line type for the first file:
 
 <pre>firefox CAN/can152_fastqc.html </pre>
 
@@ -178,7 +159,7 @@ How can you explain the pattern observed in the first six bases? Why might the b
 
 ##### Exercise 4
 
-Now lets look at a paired-end Illumina RAD dataset. The forward read is in the file KE1_S49_R1_001.fastq.gz and the reverse read is in the KE1_S49_R2_001.fastq. Have a look at the fastq files and the naming of the ID:s in the forward and reverse reads using head and tail. Can you see which reads belong to the same DNA fragment?
+Now lets look at a paired-end Illumina RAD dataset. The forward read is in the file KE1_S49_R1_001.fastq.gz and the reverse read is in the KE1_S49_R2_001.fastq. Have a look at the fastq files and the naming of the ID:s in the forward and reverse reads using **head** and **tail**. Can you see which reads belong to the same DNA fragment?
 
 * Use fastqc from the command line again to analyse these reads. 
 * Again, use firefox to view the reports.
@@ -232,9 +213,13 @@ However, not all PacBio sequences look like this. For example, lets run fastqc o
 --  
 
 ##	Reproducibility 101
-We have now run a few analyses with several datasets and programs. Have a look at the files you produced. Would you remember what all the different files are and recall how you produced them? Probably not, so to be kind to your future self finding a way to organise your work is highly recommended. Below there are a few suggestions that could be useful, but feel free to find your own path (no pun intended).Lets do another exercise and this time we will run another exercise with some recommended file structure to follow. It will be a bit harder to keep track of the structure and in which directory you are but for a real project it would be highly beneficial.
+We have now run a few analyses with several datasets and programs. Have a look at the files you produced. Would you remember what all the different files are and recall how you produced them? Probably not, so to be kind to your future self finding a way to organise your work is highly recommended. Below there are a few suggestions that could be useful, but feel free to find your own path (no pun intended).
+
+Lets do another exercise and this time we will run it with a recommended file structure to follow. It will be a bit harder to keep track of the structure and in which directory you are but for a real project it would be highly beneficial.
 
 Another suggestion is to keep track of commands used by keeping a separate terminal with a text editor of your choice open so that you can document your work as you proceed. There are many ways of doing this (R markdown, jupyter notebook etc), but here I would suggest that you start documenting in a simple text format and save it under the name README in the directory you are working in.
+
+#### Exercise 8
 
 Before starting an analysis it would be a good idea to make your data  read-only using: <pre> chmod 444 *fastq</pre>
 
@@ -279,8 +264,8 @@ multiqc ../fastqc/
 * Investigate the MultiQC report   
  How does it compare to the FastQC report? Which would you prefer if you had hundreds of RAD samples?
 
-### You have now completed this lab successfully!  
-### Well done and good luck with your future projects!
+#### You have now completed this lab successfully!  
+#### Well done and good luck with working on your future projects!
 
 --
 
