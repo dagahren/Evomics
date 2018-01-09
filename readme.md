@@ -6,6 +6,10 @@ For more information on the course in its entirety, please have a look at [The W
 
 This lab is aimed at giving you a flavour of some of the steps that needs to be taken in most sequencing projects and provides examples from several sequencing technologies. The idea is to give you an feel for how you can handle and process the sequence data that you recieve from the sequencer. Although some parts of the lab and certain tools may be specific to a particular sequencing technology or application, the overall philosophy on handling your sequencing data is the same and has already proven to withstand the test of time.
 
+## Logging in to the virtual machine
+Log in to the virtual machine as instructed previously. We will need graphics in this session to view the results files so if you are using ssh, you will need to use the -Y option. 
+
+
 Before we start there are some notations in the following text that may need a brief introduction.
 UNIX commands such as *pwd* will be in italics in the text while commands that you need to type will look like this:
 <pre>
