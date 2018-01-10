@@ -59,11 +59,11 @@ While the quality of the sequences we are getting is constantly improving there 
 Overview:
 
 * Exercise 1: Bartonella
-* Exercise 2: EMP
+* Exercise 2: Earth Microbiome Project
 * Exercise 3: RADsequencing data 
 * Exercise 4: Another RAD dataset
-* Exercise 5: smallRNA 
-* Exercise 6: MiSeq amplicon
+* Exercise 5: microRNA 
+* Exercise 6: Illumina MiSeq amplicon
 * Exercise 7: PacBio data 
 * Exercise 8: Reproducibility
 
