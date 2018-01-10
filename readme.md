@@ -177,6 +177,11 @@ SRR026762-sample.fastq.gz.
 <pre>cutadapt --help </pre>
 
 You won’t need to unzip the file. Make sure that you specify an output file.
+<details>
+<summary> Hint for running cutadapt</summary> 
+<pre>cutadapt -a =ATCTCGTATGCCGTCTTCTGCTTG -o SRR026762_clean.fastq ~/workshop_materials/quality_control/SRR026762-sample.fastq.gz</pre>
+</details> 
+
 
 * Analyse the filtered reads with FastQC and make a new diagnosis of the data. What do you observe? Are you satisfied with the outcome?
 
