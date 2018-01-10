@@ -196,8 +196,19 @@ Why is read 2 poorer quality than read 1?
 	
 Run fastq-mcf to filter based on a q score of 35 and a minimum length of 80 bp.
 The adaptors can be found in the file adaptors.fasta. Make sure you specify an output file for both the forward and reverse reads with a different name than the raw data. 
+
+<details>
+<summary> Hint for running fastq-mcf</summary> 
+<pre>fastq-mcf adaptors.fasta 1_TAAGGCGA-TAGATCGC_L001_R1_001.fastq -q 35 -l 80 -o 1_TAAGGCGA-TAGATCGC_L001_R1_001_clean.fastq</pre>
+</details> 
+
+
 Run FastQC on the filtered reads - can you see any changes? 
-Think about cases where such strict quality control might not be necessary.
+Think about cases where such strict quality control might not be necessary. 
+
+How many reads were too short?
+How many reads were trimmed?
+
 
 
 ##### Exercise 7
